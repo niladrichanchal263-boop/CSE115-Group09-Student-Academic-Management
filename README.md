@@ -3,8 +3,8 @@ CSE115 Group 09 — Inventory & Sales Manager
 The selected project is Inventory & Sales Manager, implemented in Basic C. The group currently has four identified members:
 1. Niladri Das Chanchal — Group administrator, project coordinator, main integrator, primary coder, and proofreader.
 2. Eashfee Ahmed — Module developer.
-3. Gourav Saha — Module developer.
-4. Md. Jawad Muhib — Module developer and testing/documentation contributor.
+3. Gourav Saha — Module developer and testing/documentation contributor.
+4. Md. Jawad Muhib — Module developer.
 
 
 Project title
