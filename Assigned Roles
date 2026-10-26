@@ -27,7 +27,7 @@ Tasks:
 Acceptance criteria: the inventory module must correctly add, find, display, and update products, including handling invalid IDs and duplicate product IDs.
 
 
-Gourav Saha — Sales Management Engineer
+Md. Jawad Muhib — Sales Management Engineer
 Primary responsibility: implement sales processing and calculations.
 
 Tasks:
@@ -41,7 +41,7 @@ Tasks:
 
 Acceptance criteria: a successful sale must calculate the correct total and reduce stock by the quantity sold. An unsuccessful sale must not modify stock or revenue.
 
-Md. Jawad Muhib — Data Persistence, Testing & Quality Assurance
+Gourav Saha — Data Persistence, Testing & Quality Assurance
 Primary responsibility: make the application reliable and ensure records can be retained between sessions.
 
 Tasks:
