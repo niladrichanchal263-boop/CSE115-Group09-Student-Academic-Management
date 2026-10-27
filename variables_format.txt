@@ -1,0 +1,13 @@
+CSE115 Group 09 - Shared Product Data Structure
+
+Struct Name: Product 
+
+Variables:
+-int id;             // Unique Product ID(e.g., 101)
+- char name[50];     // Product Name (e.g., "Pen")
+- float price;       // Unit Price (e.g., 15.50)
+- int quantity;      // Available Stock (e.g., 100)
+
+File Save / Load Format (products.txt):
+id,name,price,quantity
+Example: 101,Pen,15.50,100
