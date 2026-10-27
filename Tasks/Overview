@@ -1,7 +1,0 @@
-/* Guys, to organise our Student Academic Manager project properly, I'm proposing the following task distribution:
-
-1. *Me:* Coordination, main program structure, integration and GitHub management.
-2. *Abdullah Tamim:* Student records — adding and displaying students.
-3. *eashfee:* Marks, averages and grade calculations.
-4. *Gourav Saha:* Student search by ID and displaying student details.
-5. *Jawad:* Testing, test cases and basic project documentation. */
