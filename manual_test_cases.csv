@@ -1,0 +1,13 @@
+Test ID,Area,Input/action,Expected result,Actual result,Tester/date
+T01,Inventory,"Add product ID 101 with valid fields","Product appears in inventory",Pending,Not run
+T02,Validation,"Add another product with ID 101","Duplicate ID rejected; inventory unchanged",Pending,Not run
+T03,Search,"Search for existing ID 101","Correct product displayed",Pending,Not run
+T04,Search,"Search for unused ID 999","Not-found message shown",Pending,Not run
+T05,Sales,"Sell 2 units when stock is 10","Sale recorded; stock becomes 8",Pending,Not run
+T06,Sales,"Sell 99 units when stock is 8","Sale rejected; stock and sales unchanged",Pending,Not run
+T07,Restock,"Add 5 units to stock 8","Stock becomes 13",Pending,Not run
+T08,Reports,"Open sales summary after one sale","Transaction, unit and revenue totals are consistent",Pending,Not run
+T09,Persistence,"Save, exit, restart","Saved products and sales reload",Pending,Not run
+T10,Input,"Enter letters at numeric prompt","Prompt repeats without crashing",Pending,Not run
+T11,Low stock,"Stock is equal to threshold","Product appears in low-stock report",Pending,Not run
+T12,Fields,"Enter comma in product name/category","Input rejected",Pending,Not run

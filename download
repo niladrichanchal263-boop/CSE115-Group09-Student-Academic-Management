@@ -1,0 +1,11 @@
+# Compiled binaries
+inventory_manager
+inventory_manager.exe
+*.o
+# Local runtime data (uncomment if the group prefers not to commit demo records)
+# inventory.csv
+# sales.csv
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/

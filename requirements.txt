@@ -1,0 +1,4 @@
+# Runtime dependencies: none beyond a standard C compiler.
+# Build tool example: GCC or Clang.
+# Build command:
+# gcc -std=c11 -Wall -Wextra -pedantic main.c -o inventory_manager
