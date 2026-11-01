@@ -40,4 +40,18 @@ int main() {
     Product inventory[MAX_PRODUCTS];
     int totalLoaded = extractProductData(inventory, "products.txt");
 
+    printf("\n--- Data Extraction Test ---\n");
+    printf("Total products loaded: %d\n\n", totalloaded);
+
+    for (int i = 0; i < totalloaded; i++) {
+        printf("ID: %d | Name: %-10s | Price: %.2f | Stock: %d\n",
+               inventory[i].id,
+               inventory[i].name,
+               inventory[i].price,
+               inventory[i].quantity);
+    }
+
+    return 0;
+}
+
     
