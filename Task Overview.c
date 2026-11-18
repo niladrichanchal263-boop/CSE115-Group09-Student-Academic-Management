@@ -1,7 +1,5 @@
 /*
 
-Your coding roadmap
-
 1. Main program & menuStarted
 
 2. Menu navigation
