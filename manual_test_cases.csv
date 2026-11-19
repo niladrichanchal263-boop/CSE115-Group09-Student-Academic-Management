@@ -1,0 +1,12 @@
+Test ID,Area,Input/action,Expected result,Actual result,Tester/date
+M01,Main menu,Start program,Main menu is displayed,Pending,Not run
+M02,Navigation,Enter 1,Inventory placeholder appears and menu repeats,Pending,Not run
+M03,Navigation,Enter 2,Sales placeholder appears and menu repeats,Pending,Not run
+M04,Navigation,Enter 3,Sales history placeholder appears and menu repeats,Pending,Not run
+M05,Navigation,Enter 4,Revenue placeholder appears and menu repeats,Pending,Not run
+M06,Exit,Enter 5,Exit message appears and program terminates,Pending,Not run
+M07,Validation,Enter 0 or 9,Invalid-choice message appears and menu repeats,Pending,Not run
+M08,Input,Enter alphabetic input,Invalid-input message appears and program continues,Pending,Not run
+I01,Inventory integration,Test inventory after module connection,Inventory operations work,Not yet available,Not run
+S01,Sales integration,Test valid sale after module connection,Stock and sale record update correctly,Not yet available,Not run
+P01,Persistence integration,Save and restart after module connection,Records reload correctly,Not yet available,Not run
