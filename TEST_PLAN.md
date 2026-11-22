@@ -22,3 +22,20 @@
 * **Expected Result:** Product '103' is found and displayed; stock updates from '200' to '250'.
 * **Actual Result:**________________________________________
 * **Status:**[PASS/FAIL]
+
+## 2. Invalid Tests
+
+### Test 2.1: Reject Duplicate Product ID
+* **Starting Data:** ID '101' ('Pen') already exists in inventory.
+* **Action:** Try adding a new product with duplicate ID '101'.
+* **Expected Result:** Rejected with a duplicate ID error message; original '101' record stays unchanged.
+* **Actual Result:**__________________________________________
+* **Status:**[PASS/FAIL]
+
+### Test 2.2: Reject Negative Price or Stock
+* **Starting Data:** Active inventory menu.
+* **Action:** Try adding ID '105'with Price '-10.00' or Stock '-5'.
+* **Expected Result:** Input is rejected with a validation message; inventory count remains unchanged.
+* **Actual Result:**_________________________________________
+* **Status:** [PASS / FAIL]
+
