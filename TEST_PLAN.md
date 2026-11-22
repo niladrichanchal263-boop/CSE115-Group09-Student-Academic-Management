@@ -39,3 +39,18 @@
 * **Actual Result:**___________________________________________
 * **Status:** [PASS / FAIL]
 
+### Test 2.3: Reject Unknown ID & Invalid Sale Quantity
+* **Starting Data:** ID '101' has '95' stock; total revenue is '77.50'.
+* **Action:** Try selling unknown ID '999', '0' units of ID '101', and '-2' units of ID '101'.
+* **Expected Result:** All three sales are rejected; ID '101', and stock stays '95' and revenue stays '77.50'.
+* **Actual Result:**_____________________________________________
+* **Status:**[PASS / FAIL]
+
+### Test 2.4: Non-Numeric Menu Input
+* **Starting Data:** Main menu prompt is active.
+* **Action:** Type letters ('abc') instead of a menu number.
+* **Expected Result:** Program displays an invalid input message and re-prompts cleanly without an infinite loop or crash.
+* **Actual Result:**________________________________________
+* **Status:**[PASS / FAIL]
+
+
