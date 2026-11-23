@@ -1,0 +1,5 @@
+101, Ballpoint Pen, 15.50, 40
+102, A4 Notebook, 85.00, 25
+103, Stapler Machine, 180.00, 10
+104, Whiteboard Marker, 45.00, 30
+105, Scientific Calculator, 1250.00, 8
