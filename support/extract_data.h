@@ -27,12 +27,14 @@ typedef struct {
     double totalAmount;
 } Sale;
 
+/* Core Persistence Functions */
 int extractProductData(const char *filePath, Product products[], int maxProducts);
 bool saveProductData(const char *filePath, const Product products[], int count);
 
 int extractSalesData(const char *filePath, Sale sales[], int maxSales);
 bool saveSalesData(const char *filePath, const Sale sales[], int count);
 
+/* Validation & Parsing Helpers */
 void trimWhitespace(char *str);
 void clearStdinBuffer(void);
 bool isSafeCsvString(const char *str);
