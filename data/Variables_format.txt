@@ -1,0 +1,32 @@
+CSE115 Group 09 - DATA & FILE FORMAT SPECIFICATION
+Owner: Gourav Saha (Data Persistence, Testing & QA)
+
+1. CONSTANTS
+   MAX_PRODUCTS       = 100
+   MAX_SALES          = 500
+   MAX_NAME_LEN       = 50
+   MAX_LINE_LEN       = 256
+   PRODUCTS_FILE_PATH = "data/products.txt"
+   SALES_FILE_PATH    = "data/sales.txt"
+
+2. PRODUCT STRUCT
+   int    id;                  // Unique positive integer (> 0)
+   char   name[MAX_NAME_LEN];  // Non-empty string, spaces allowed, no commas
+   double price;               // Positive unit price (> 0.0)
+   int    quantity;            // Non-negative stock count (>= 0)
+
+3. SALE STRUCT
+   int    saleId;              // Unique positive transaction ID (> 0)
+   int    productId;           // References Product.id (> 0)
+   int    quantitySold;        // Positive integer (> 0)
+   double unitPrice;           // Product price at time of sale (> 0.0)
+   double totalAmount;         // unitPrice * quantitySold (> 0.0)
+
+4. CSV FILE FORMATS (No header row)
+   data/products.txt -> id, name, price, quantity
+   Example: 101, Ballpoint Pen, 15.50, 40
+
+   data/sales.txt    -> saleId, productId, quantitySold, unitPrice, totalAmount
+   Example: 1, 101, 3, 15.50, 46.50
+
+
