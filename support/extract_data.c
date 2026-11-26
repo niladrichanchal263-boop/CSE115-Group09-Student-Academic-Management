@@ -62,4 +62,26 @@ bool isValidProductRecord(const Product *product) {
 
 bool isValidSaleRecord(const Sale *sale) {
     if (sale == NULL) {
+        return false;
+    }
+    if (sale->saleId <= 0 || sale->productId <= 0 || sale->quantitySold <= 0) {
+        return false;
+    }
+    if (sale->unitPrice <= 0.0 || sale->totalAmount <= 0.0) {
+        return false;
+    }
+    return true;
+}
+
+bool isDuplicateProductId(const Product products[], int currentCount, int id) {
+    int i;
+    for (i = 0; i < currentCount; i++) {
+        if (products[i].id == id) {
+            return true;
+        }
+    }
+    return false;
+}
+
+        
    
