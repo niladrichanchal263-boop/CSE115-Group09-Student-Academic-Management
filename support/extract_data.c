@@ -46,4 +46,20 @@ bool isSafeCsvString(const char *str) {
     }
     return true;
 }
+
+bool isValidProductRecord(const Product *product) {
+    if (product == NULL) {
+        return false;
+    }
+    if (product->id <= 0 || !isSafeCsvString(product->name)) {
+        return false;
+    }
+    if (product->price <= 0.0 || product->quantity < 0) {
+        return false;
+    }
+    return true;
+}
+
+bool isValidSaleRecord(const Sale *sale) {
+    if (sale == NULL) {
    
