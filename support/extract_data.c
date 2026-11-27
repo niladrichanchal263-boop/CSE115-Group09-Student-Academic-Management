@@ -1,5 +1,5 @@
 #include "extract_data.h"
-#include <ctype.h>
+#include <ctype.h> -
 #include <stdio.h>
 #include <string.h>
 
@@ -83,5 +83,37 @@ bool isDuplicateProductId(const Product products[], int currentCount, int id) {
     return false;
 }
 
+bool parseProductLine(const char *line, Product *outProduct) {
+    Product temp;
+    char trailing;
+    int matched;
+
+    if (line == NULL || outProduct == NULL) {
+        return false;
+    }
+
+    matched = sscanf(line, " %d, %49[^,], %lf, %d %c",
+                     &temp.id, temp.name, &temp.price, &temp.quantity, &trailing);   
+    if (matched != 4) {
+        return false;
+    }
+
+    trimWhitespace(temp.name);
+    if (!isValidProductRecord(&temp)) {
+        return false;
+    }
+
+    *outProduct = temp;
+    return true;
+}
+
+bool parseSaleLine(const char *line, Sale *outSale) {
+    Sale temp;
+    char trailing;
+    int matched;
+
+    if (line == NULL || outSale == NULL) {
+        return false;
+    }
         
    
