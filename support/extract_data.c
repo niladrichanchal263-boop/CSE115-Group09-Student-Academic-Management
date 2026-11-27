@@ -116,4 +116,17 @@ bool parseSaleLine(const char *line, Sale *outSale) {
         return false;
     }
         
-   
+    matched = sscanf(line, "%d, %d, %d, %lf, %lf %c",
+                     &temp.saleId, &temp.productId, &temp.quantitySold,
+                     &temp.unitPrice, &temp.totalAmount, &trailing);
+    if (matched != 5) {
+        return false;
+    }
+
+    if (!isValidSaleRecord(&temp)) {
+        return false;
+    }
+
+    *outSale = temp;
+     return true;
+} 
